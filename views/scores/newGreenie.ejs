@@ -1,0 +1,42 @@
+<% layout('layouts/boilerplate') %> 
+
+
+<div class="container d-flex justify-content-center align-items-center mt-3 mb-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+                <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1606443192517-919653213206?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80" alt="">
+                <div class="card-body">
+                    <form action="/scores/<%=score._id%>/greenies" method="POST" class="mb-3 validated-form" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="holeNumber">HOLE</label>
+                            <input class="form-control" type="number" name="greenie[holeNum]"id="holeNumber" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="feet">FEET</label>
+                            <input class="form-control" type="number" name="greenie[feet]" id="feet" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="inches">INCHES</label>
+                            <input class="form-control" type="number" name="greenie[inches]" id="inches" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-success"><b>ADD GREENIE</b></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

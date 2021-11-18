@@ -1,0 +1,223 @@
+<% layout('layouts/boilerplate') %> 
+
+
+    <h1>Input Scores for <%= score.name %> </h1>
+
+<div class="table-responsive d-flex">
+<form action="/scores/<%=score._id%>?_method=PUT" method="POST" class="">
+    <table class="table table-bordered table-striped">
+        <thead  class="table-dark">
+            <tr class="text-center">
+                <th scope="col">HOLE</th>
+                <th scope="col">STROKES</th>
+                <th scope="col">PUTTS</th>
+            </tr>
+        </thead>
+        <tr class='w-100'>
+            <td class="table-dark text-center text-bold">
+                <label for="hole1"> <b>1</b> </label>
+            </td>
+            <td class="">
+                <input class="text-center w-100"  type="number" id="hole1" name="score[hole1][strokes]" value="<%=score.hole1.strokes%>">
+            </td>
+            <td>   
+                <input class="text-center w-100" type="number" id="hole1" name="score[hole1][putts]" value="<%=score.hole1.putts%>">
+            </td> 
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole2">2</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole2" name="score[hole2][strokes]" value="<%=score.hole2.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole2" name="score[hole2][putts]" value="<%=score.hole2.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole3">3</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole3" name="score[hole3][strokes]" value="<%=score.hole3.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole3" name="score[hole3][putts]" value="<%=score.hole3.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole4">4</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole4" name="score[hole4][strokes]" value="<%=score.hole4.strokes%>">
+            </td>
+            <td>   
+                <input class="text-center w-100" type="number" id="hole4" name="score[hole4][putts]" value="<%=score.hole4.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole5">5</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole5" name="score[hole5][strokes]" value="<%=score.hole5.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole5" name="score[hole5][putts]" value="<%=score.hole5.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole6">6</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole6" name="score[hole6][strokes]" value="<%=score.hole6.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole6" name="score[hole6][putts]" value="<%=score.hole6.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole7">7</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole7" name="score[hole7][strokes]" value="<%=score.hole7.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole7" name="score[hole7][putts]" value="<%=score.hole7.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole8">8</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole8" name="score[hole8][strokes]" value="<%=score.hole8.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole8" name="score[hole8][putts]" value="<%=score.hole8.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole9">9</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole9" name="score[hole9][strokes]" value="<%=score.hole9.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole9" name="score[hole9][putts]" value="<%=score.hole9.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole10">10</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole10" name="score[hole10][strokes]" value="<%=score.hole10.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole10" name="score[hole10][putts]" value="<%=score.hole10.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole11">11</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole11" name="score[hole11][strokes]" value="<%=score.hole11.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole11" name="score[hole11][putts]" value="<%=score.hole11.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole12">12</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole12" name="score[hole12][strokes]" value="<%=score.hole12.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole12" name="score[hole12][putts]" value="<%=score.hole12.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole13">13</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole13" name="score[hole13][strokes]" value="<%=score.hole13.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole13" name="score[hole13][putts]" value="<%=score.hole13.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole14">14</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole14" name="score[hole14][strokes]" value="<%=score.hole14.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole14" name="score[hole14][putts]" value="<%=score.hole14.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole15">15</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole15" name="score[hole15][strokes]" value="<%=score.hole15.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole15" name="score[hole15][putts]" value="<%=score.hole15.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole16">16</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole16" name="score[hole16][strokes]" value="<%=score.hole16.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole16" name="score[hole16][putts]" value="<%=score.hole16.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole17">17</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole17" name="score[hole17][strokes]" value="<%=score.hole17.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole17" name="score[hole17][putts]" value="<%=score.hole17.putts%>">
+            </td>
+        </tr>
+        <tr>
+            <td class="table-dark text-center text-bold">
+                <label for="hole18">18</label>
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole18" name="score[hole18][strokes]" value="<%=score.hole18.strokes%>">
+            </td>
+            <td>
+                <input class="text-center w-100" type="number" id="hole18" name="score[hole18][putts]" value="<%=score.hole18.putts%>">
+            </td>
+        </tr>
+    </table>
+<div class="d-flex justify-content-end">
+    <button class="btn btn-success mb-3">Update Score</button>
+</div>
+
+</form>
+</div>
+
+
+    

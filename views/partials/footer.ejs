@@ -1,0 +1,8 @@
+<footer class="footer bg-dark py-2 mt-auto">
+    <div class="d-flex">
+        <div class="p-2 flex-grow-1 text-muted">Contra Costa Golf Club 2022</div>
+        <% if(currentUser) {%> 
+        <div class="p-2 text-muted justify-content-end"><b> Signed in: <%=currentUser.username %></b></div>
+        <% } %> 
+    </div>
+</footer>

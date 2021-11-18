@@ -1,0 +1,35 @@
+<% layout('layouts/boilerplate') %> 
+    
+    <div class="container d-flex justify-content-center align-items-center mt-1 mb-3">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                <div class="card shadow">
+                    <div class="card-header bg-success">
+                        <h1 class="text-center text-white mt-1">GREENIES</h1>
+                    </div>
+                        <img class="card-img-bottom img-fluid" src="https://images.unsplash.com/photo-1514480573427-1f96cbed6a27?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1730&q=80" alt="">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <% for(let score of scores) { %> 
+        <% for(let greenie of score.greenies) { %>
+        <div class="container mb-3">
+            <div class="card ">
+                <div class="card-header bg-secondary text-white">
+                <b><%= score.name %></b>
+                </div>
+            <div class="card-body bg-success text-white">
+                    <p class="h3"><b>HOLE <%= greenie.holeNum %> @ <%= greenie.feet %>' <%= greenie.inches %>" </b></p>
+                </div>
+            </div>
+        </div>
+        <% } %> 
+    <% } %>
+

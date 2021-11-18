@@ -1,0 +1,39 @@
+<% layout('layouts/boilerplate') %> 
+
+<h1 class="text-center">New Round</h1>
+<div class="container d-flex justify-content-center align-items-center mt-3 mb-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+                <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1605144156546-91acf5e4cffd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1742&q=80" alt="">
+                <div class="card-body">
+                    <form action="/scores" method="POST" novalidate class="validated-form">
+                        <div class="mb-3">
+                            <label class="form-label" for="name">Name</label>
+                            <input class="form-control" type="text" id="name" name="score[name]" value="<%= currentUser.username %> " required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="handicap">Handicap</label>
+                            <input class="form-control" type="number" step ="0.01" id="handicap" name="score[handicap]" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                        <button class="btn btn-success mb-3">Start Round</button>
+                    </div>
+                    </div>
+                        </form>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
